@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactcicd
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: reactcicd
+  template:
+    metadata:
+      labels:
+        app: reactcicd
+    spec:
+      containers:
+      - name: reactcicd
+        image: ashram939/reactcicd:f6315789d69061e0f946d6c26dfa0cd8144ace2a
+        ports:
+        - containerPort: 80
