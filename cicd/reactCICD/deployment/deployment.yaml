@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: reactcicd
-        image: hanaac22/reactcicd:a5dfc2648551f61ef83b05f3d7537b4c337f5dbe
+        image: hanaac22/reactcicd:065137692edd5d6c34b42b1a024fcaf9316d457e
         ports:
         - containerPort: 80
